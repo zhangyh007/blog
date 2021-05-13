@@ -51,34 +51,9 @@ jobs:
           switches: -avzh
           path: ./docs/.vuepress/dist
           remote_path: /usr/share/nginx/html/blog
-          #remote_host: ${{ secrets.SERVER_IP }} #ip
-          remote_host: 106.15.191.44
+          remote_host: ${{ secrets.SERVER_IP }} #ip
+          #remote_host: 106.15.191.44
           remote_port: 22
           remote_user: root
-          #remote_key: ${{ secrets.PRIVATE_KEY }}
-          remote_key: -----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAYEAxtpGnr+BmcjwJogkh1dtu/VzrlHdbArZkhI5K8CZpgD6V6J1RE+m
-aWk+69urWWm1laAZYxrd/A8ftC3jXW+GQEFakOETD+cf/m/AHR3wPhz72pqg3HdsSyq3Nq
-K81wIfYcHcZzU979TDAy5wMEPXwbyXdsYU7Qc6FFgk0EaRoS1ZrTodAJCN7ALsS/4tFqtQ
-lIFZq2HLYwuvA4feDzBQ5zep3fAsg187I/zH1oDIo6bzIXFyAgl6mwODi3J92ZOxQdtw50
-J0smjinwIJdBnfUUhIj2wruDnwC5mR4uoWI2mYHveeVx5DwzkmYTTY2IZCu6yGwBoIGOD/
-D6R4hKuUMaC6Dgvz88zMKZy8MRIWELsSBQlU7JM/FUBjFZXNEsvPi9vue4XeKfOM4w07fc
-BVNP4DVtlMEC9ooV03LJmr+W4OVRVwl/Hc0zasK5zcF1kHI2yCXFZzJkLgljycWJTa041v
-q3dCcxDLzU6r13OIDK//BL1VyEk8gDSsKJsI45nLAAAFoO1y1BbtctQWAAAAB3NzaC1yc2
-EAAAGBAMbaRp6/gZnI8CaIJIdXbbv1c65R3WwK2ZISOSvAmaYA+leidURPpmlpPuvbq1lp
-tZWgGWMa3fwPH7Qt411vhkBBWpDhEw/nH/5vwB0d8D4c+9qaoNx3bEsqtzaivNcCH2HB3G
-c1Pe/UwwMucDBD18G8l3bGFO0HOhRYJNBGkaEtWa06HQCQjewC7Ev+LRarUJSBWathy2ML
-rwOH3g8wUOc3qd3wLINfOyP8x9aAyKOm8yFxcgIJepsDg4tyfdmTsUHbcOdCdLJo4p8CCX
-QZ31FISI9sK7g58AuZkeLqFiNpmB73nlceQ8M5JmE02NiGQrushsAaCBjg/w+keISrlDGg
-ug4L8/PMzCmcvDESFhC7EgUJVOyTPxVAYxWVzRLLz4vb7nuF3inzjOMNO33AVTT+A1bZTB
-AvaKFdNyyZq/luDlUVcJfx3NM2rCuc3BdZByNsglxWcyZC4JY8nFiU2tONb6t3QnMQy81O
-q9dziAyv/wS9VchJPIA0rCibCOOZywAAAAMBAAEAAAGAExwC0Vqh/79ZpLpMmF0EhJ2P4l
-6noqxgQDNUHypBGbzaUfWgw1HMMjEVBOF1VABenORnzChW0NQ7PbtzMBV5l08wft/CTzLs
-1iyzD5lC7xUl9toJP2aSl56hQLTe5OKlVWWl4p0xOIz/uJyL13eNkmanP5jFhgm9wRq/Xu
-yJLi4HgiglhVpe6SFWx+7DMnyAH+VWUqvxObFzvikeY+NGwxGMV3GvNWi/bDPsmGaD4YY3
-sy0Nwbhbee4ahBoakgApS0dP/wVDBSr/tvm7PwO762vvV8vqoRJdkvo2qMbnBl4oAIS/pL
-mJrSOFMcQGb04CJIQlRpOJx5IfAxxk6Z/dk8+eOU+q66rJl8b1yeubeiwaJfXxP1FYwFGb
-e7shMzJx5VjFWYAqv4FCAU3PaixCSSjgV2AuWf8CB4w9YMzDJEBhgwUukrdvy2/yX4H36y
-"id_rsa" [readonly] 39L, 2635C
+          remote_key: ${{ secrets.PRIVATE_KEY }}
 
