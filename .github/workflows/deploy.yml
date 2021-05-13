@@ -43,19 +43,18 @@ jobs:
           # user_email: ${{ secrets.MY_USER_EMAIL }}
           commit_message: build and restart # 部署时的 git 提交信息，自由填写
       # 部署到zhangyh.com.cn服务器
-      #- name: rsync deployments
+      - name: rsync deployments
         # if: github.ref == 'refs/heads/main' #对分支进行检测
-      #  uses: burnett01/rsync-deployments@4.1
-      #  with:
-         # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
-      #    switches: -avzh
-      #    path: ./docs/.vuepress/dist
-      #    remote_path: /usr/share/nginx/html/blog
-      #    #remote_host: ${{ secrets.SERVER_IP }} #ip
-      #    remote_host: 106.15.191.44
-      #    remote_port: 22
-      #    remote_user: root
-      #    remote_key: ${{ secrets.PRIVATE_KEY }}
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
+          switches: -avzh
+          path: ./docs/.vuepress/dist
+          remote_path: /usr/share/nginx/html/blog
+          remote_host: ${{ secrets.SERVER_IP }} #ip
+          remote_port: 22
+          remote_user: root
+          remote_key: ${{ secrets.PRIVATE_KEY }}
       - name: deploy file to prod server
         #if: github.ref == 'refs/heads/master' #对分支进行检测
         uses: wlixcc/SFTP-Deploy-Action@v1.0
