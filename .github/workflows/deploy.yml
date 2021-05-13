@@ -54,14 +54,14 @@ jobs:
           remote_host: ${{ secrets.SERVER_IP }} #ip
           remote_port: 22
           remote_user: root
-          remote_key: ${{ secrets.PUBLIC_KEY }}
+          remote_key: ${{ secrets.PRIVATE_KEY }}
       - name: deploy file to prod server
         #if: github.ref == 'refs/heads/master' #对分支进行检测
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: root
           server: ${{ secrets.SERVER_IP }} #正式服务器地址
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.PRIVATE_KEY }}
           local_path: ./docs/.vuepress/dist
           remote_path: /usr/share/nginx/html/blog #服务器部署路径
 
