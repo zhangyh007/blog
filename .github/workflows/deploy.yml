@@ -51,9 +51,9 @@ jobs:
           switches: -avzh
           path: ./docs/.vuepress/dist
           remote_path: /usr/share/nginx/html/blog
-          #remote_host: ${{ secrets.SERVER_IP }} #ip
-          remote_host: 106.15.191.44
+          remote_host: ${{ secrets.SERVER_IP }} #ip
+          #remote_host: 106.15.191.44
           remote_port: 22
           remote_user: root
-          # remote_key: ${{ secrets.PRIVATE_KEY }}
-          remote_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDG2kaev4GZyPAmiCSHV2279XOuUd1sCtmSEjkrwJmmAPpXonVET6ZpaT7r26tZabWVoBljGt38Dx+0LeNdb4ZAQVqQ4RMP5x/+b8AdHfA+HPvamqDcd2xLKrc2orzXAh9hwdxnNT3v1MMDLnAwQ9fBvJd2xhTtBzoUWCTQRpGhLVmtOh0AkI3sAuxL/i0Wq1CUgVmrYctjC68Dh94PMFDnN6nd8CyDXzsj/MfWgMijpvMhcXICCXqbA4OLcn3Zk7FB23DnQnSyaOKfAgl0Gd9RSEiPbCu4OfALmZHi6hYjaZge955XHkPDOSZhNNjYhkK7rIbAGggY4P8PpHiEq5QxoLoOC/PzzMwpnLwxEhYQuxIFCVTskz8VQGMVlc0Sy8+L2+57hd4p84zjDTt9wFU0/gNW2UwQL2ihXTcsmav5bg5VFXCX8dzTNqwrnNwXWQcjbIJcVnMmQuCWPJxYlNrTjW+rd0JzEMvNTqvXc4gMr/8EvVXISTyANKwomwjjmcs= zhangyanhua@zhangyanhuadeMacBook-Pro.local
+          remote_key: ${{ secrets.PRIVATE_KEY }}
+
