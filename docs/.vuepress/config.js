@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Jeremy Zhang 的 blog',
   description: '学习，记录，提高自己',
-  base: '/my-blog/',
+  base: '/blog/',
   host: '0.0.0.0',
   port: 8080,
   plugins: ['@vuepress/back-to-top'],
