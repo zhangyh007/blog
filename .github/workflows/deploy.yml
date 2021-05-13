@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build" and "deploy"
-  build and deploy:
+  build_and_deploy:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
 
