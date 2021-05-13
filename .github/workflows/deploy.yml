@@ -44,7 +44,8 @@ jobs:
           commit_message: build and restart # 部署时的 git 提交信息，自由填写
       # 部署到zhangyh.com.cn服务器
       - name: rsync deployments
-        uses: easingthemes/ssh-deploy@v2.0.7
+        if: github.ref == 'refs/heads/main' #对分支进行检测
+        uses: zhangyh007/ssh-action@master
         # env:
         #   SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         #   ARGS: "-avz --delete"
@@ -54,7 +55,7 @@ jobs:
         #   TARGET: '/usr/share/nginx/html/blog'
         with: 
           username: 'root'   #ssh user name
-          server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
+          server: ${{ secrets.SERVER_IP }} #ip
           ssh_private_key: ${{ secrets.PRIVATE_KEY }} #引用之前创建好的secret
           local_path: './docs/.vuepress/dist'  # 对应我们项目build的文件夹路径
           remote_path: '/usr/share/nginx/html/blog'
