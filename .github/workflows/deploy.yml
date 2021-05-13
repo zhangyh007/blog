@@ -54,7 +54,7 @@ jobs:
           remote_host: ${{ secrets.SERVER_IP }} #ip
           remote_port: 22
           remote_user: root
-          remote_key: ${{ secrets.PRIVATE_KEY }}
+          remote_key: ${{ secrets.PUBLIC_KEY }}
       - name: deploy file to prod server
         #if: github.ref == 'refs/heads/master' #对分支进行检测
         uses: wlixcc/SFTP-Deploy-Action@v1.0
