@@ -7,14 +7,17 @@ module.exports = {
   plugins: ['@vuepress/back-to-top', '@vuepress/nprogress'],
   themeConfig: {
     logo: '',
-    sidebarDepth: 2,
-    lastUpdated: 'Last Updated',
+    sidebarDepth: 3,
+    lastUpdated: '上次更新',
+    displayAllHeaders: false, // 默认值：false 展示全部的header
     nav: [
       { text: '文章目录', link: '/article/', ariaLabel: '文章',
         items: [
           { text: '文章', link: '/article/' }
         ]
       },
+      { text: '数据结构', link: '/dataStructure/' },
+      { text: '算法', link: '/algorithm/' },
       { text: '博客', link: 'http://www.zhangyh.com.cn' },
       { text: 'github', link: 'https://github.com/zhangyh007' },
     ],
@@ -34,8 +37,28 @@ module.exports = {
             }
           ]
         }
+      ],
+      '/algorithm': [
+        
+      ],
+      '/dataStructure': [
+        {
+          title: '数组',
+          children: [
+            '/dataStructure/数组/数组',
+            '/dataStructure/数组/集合',
+            '/dataStructure/数组/有序数组',
+          ]
+        }
       ]
     }
     
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': '/docs/.vuepress/public/'
+      }
+    }
   }
 }
