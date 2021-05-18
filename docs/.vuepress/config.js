@@ -57,6 +57,13 @@ module.exports = {
             '/dataStructure/数组/集合',
             '/dataStructure/数组/有序数组',
           ]
+        },
+        {
+          title: '链表',
+          children: [
+            '/dataStructure/链表/',
+            '/dataStructure/链表/双向链表',
+          ]
         }
       ]
     }
