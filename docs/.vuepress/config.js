@@ -38,10 +38,18 @@ module.exports = {
           ]
         }
       ],
-      '/algorithm': [
-        
+      '/algorithm/': [
+        {
+          title: '排序',
+          children: [
+            '/algorithm/排序/冒泡排序',
+            '/algorithm/排序/选择排序',
+            '/algorithm/排序/插入排序',
+            '/algorithm/排序/快速排序',
+          ]
+        }
       ],
-      '/dataStructure': [
+      '/dataStructure/': [
         {
           title: '数组',
           children: [
