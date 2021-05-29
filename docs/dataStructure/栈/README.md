@@ -4,6 +4,7 @@
 
 ### 实现
 数组实现
+
 ``` js
 class Stack {
   constructor() {
@@ -34,5 +35,41 @@ class Stack {
     return this.items.length
   }
 }
+```
 
+对象实现
+
+``` js
+class Stack {
+  constructor() {
+    this.items = {}
+    this.count = 0
+  }
+  push(element) {
+    this.items[count] = element
+    this.count++
+  }
+  pop() {
+    if(this.isEmpty()) {
+      return undefined
+    }
+    const stack = this.items[this.count]
+    delete this.items[this.count]
+    this.count--
+    return stack
+  }
+  peek() {
+    return this.count === 0 ? undefined : this.items[this.count]
+  }
+  clear() {
+    this.items = {}
+    this.count = 0
+  }
+  isEmpty() {
+    return this.count === 0
+  }
+  size() {
+    return this.count
+  }
+}
 ```
