@@ -11,14 +11,10 @@ module.exports = {
     lastUpdated: '上次更新',
     displayAllHeaders: false, // 默认值：false 展示全部的header
     nav: [
-      { text: '文章目录', link: '/article/', ariaLabel: '文章',
-        items: [
-          { text: '文章', link: '/article/' }
-        ]
-      },
+      { text: '文章目录', link: '/article/', ariaLabel: '文章'},
       { text: '数据结构', link: '/dataStructure/' },
       { text: '算法', link: '/algorithm/' },
-      { text: '博客', link: 'http://www.zhangyh.com.cn' },
+      { text: '博客', link: 'http://www.zhangyh.com.cn/blog/' },
       { text: 'github', link: 'https://github.com/zhangyh007' },
     ],
     sidebar: {
@@ -64,7 +60,19 @@ module.exports = {
             '/dataStructure/链表/',
             '/dataStructure/链表/双向链表',
           ]
-        }
+        },
+        {
+          title: '二叉树',
+          children: [
+            '/dataStructure/二叉树/',
+          ]
+        },
+        {
+          title: '栈',
+          children: [
+            '/dataStructure/栈/',
+          ]
+        },
       ]
     }
     
